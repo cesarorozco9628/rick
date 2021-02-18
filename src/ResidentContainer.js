@@ -8,17 +8,17 @@ import ResidentInfo from "./ResidentInfo";
 
 
 
-    const resp = data.map((da) => {
-        Characters(da).then((res) => {
-            <ResidentInfo
-                img={res.image}
-                name={res.name}
-                status={res.status}
-                origins={res.origin.name}
-                Nepisodes={res.episode.length}
-            />
-        })
-    })
+    // const resp = data.map((da) => {
+    //     Characters(da).then((res) => {
+    //         <ResidentInfo
+    //             img={res.image}
+    //             name={res.name}
+    //             status={res.status}
+    //             origins={res.origin.name}
+    //             Nepisodes={res.episode.length}
+    //         />
+    //     })
+    // })
 
 
 
