@@ -8,9 +8,9 @@ export const  LocationContainer =  (value) => {
  
 ///////////////////////////////////////////////////////////////////////////////////
 
-export const Characters = (value) =>{
+export const Characters = async (value) =>{
     const url = value;
-    const res = axios.get(url)
+    const res = await axios.get(url)
     return res;
 }
 

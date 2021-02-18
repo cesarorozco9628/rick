@@ -3,27 +3,31 @@ import { Characters } from "./LocationContainer";
 import ResidentInfo from "./ResidentInfo";
 
 
-export const ResidentContainer = () => {
-    const data = sessionStorage.getItem('dat')
+
+    const data = JSON.parse(sessionStorage.getItem('dat'))
 
 
-    const per =  data.map((value)  => {
-       Characters(value).then((res) => {
+
+    const resp = data.map((da) => {
+        Characters(da).then((res) => {
             <ResidentInfo
-                        name={res.name}
-                        img={res.image}
-                        status={res.status}
-                        origin={res.origin.name}
-                        Nepisodes={res.episode.length}
-                    />
-               })
+                img={res.image}
+                name={res.name}
+                status={res.status}
+                origins={res.origin.name}
+                Nepisodes={res.episode.length}
+            />
+        })
     })
 
 
+
+
+export const ResidentContainer = () => {
     
     return(
         <div>
-          {per}
+           {resp} 
         </div>
     );
 }
