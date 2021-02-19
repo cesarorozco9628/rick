@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-export const  LocationContainer =  (value) => {
+export const  LocationContainer =  async(value) => {
     const URL = `https://rickandmortyapi.com/api/location/${value}`
-    const res =  axios.get (URL)
+    const res =  await axios.get (URL)
     return res;
 }
  
