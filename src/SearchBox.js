@@ -4,7 +4,7 @@ import {LocationContainer} from './LocationContainer'
 import { ResidentContainer } from "./ResidentContainer";
 
 
-const SearchBox = ()=> {
+const SearchBox = () => {
   
     const [searchUbication, setSearchUbication] = useState(""); 
     const [name, setName] = useState("");

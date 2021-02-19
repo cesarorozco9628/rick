@@ -1,6 +1,6 @@
 import React from "react";
-import { Characters } from "./LocationContainer";
-import ResidentInfo from "./ResidentInfo";
+// import { Characters } from "./LocationContainer";
+// import ResidentInfo from "./ResidentInfo";
 
 
 
@@ -19,6 +19,8 @@ import ResidentInfo from "./ResidentInfo";
     //         />
     //     })
     // })
+    // profesor intente hacer un llamado a la API desde la const resp pero en consolo me dice que map no esta definida y estuve intentando por cuatro dia y nada 
+
 
 
 
@@ -27,7 +29,7 @@ export const ResidentContainer = () => {
     
     return(
         <div>
-           {resp} 
+           {/* {resp}  */}
         </div>
     );
 }

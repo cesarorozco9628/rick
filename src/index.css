@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+body{
+  background-image: url(https://images.pexels.com/photos/821644/pexels-photo-821644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
 .container{
   width: 80%;
   height: 100vh;
@@ -24,7 +30,7 @@
   padding: 25px;
   border: none;
   border-radius: 15px;
-  background-color:brown;
+  background-color:rgba(24, 23, 23, 0.527);
 }
 
 label{
@@ -37,7 +43,7 @@ input{
   margin-top: 20px;
   width: 100%;
   border: none;
-  background-color: brown;
+  background-color: rgb(24, 23, 23, 0);
   border-bottom: solid 2px rgb(255, 255, 255);
   outline: none;
 }
@@ -49,7 +55,7 @@ button{
   outline: none;
   border: none;
   padding: 10px 0px;
-  background-color: chocolate;
+  background-color: rgba(85, 83, 82, 0.753);
   color: white;
 }
 
@@ -58,4 +64,16 @@ button{
   height: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.card-info{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 15px;
+}
+p{
+  margin-bottom: 15px;
 }
